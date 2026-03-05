@@ -1,0 +1,4 @@
+# Git ignore file for the project
+.ipynb_checkpoints/
+__pycache__/
+.venv
