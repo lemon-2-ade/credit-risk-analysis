@@ -480,3 +480,75 @@ input::placeholder {
 .error-border {
     border-color: var(--danger) !important;
 }
+
+
+/* ========================= */
+/* ANALYTICS DASHBOARD */
+/* ========================= */
+
+.analytics-section {
+    margin-top: 2rem;
+}
+
+/* Section heading (same style as form section) */
+.analytics-section h2 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.analytics-section h2::before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: var(--primary);
+    border-radius: 4px;
+}
+
+/* Grid layout for charts */
+.charts-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+/* Side-by-side on larger screens */
+@media (min-width: 900px) {
+    .charts-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Individual chart box */
+.chart-box {
+    background: rgba(0,0,0,0.25);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.05);
+    text-align: center;
+    transition: var(--transition);
+}
+
+/* Hover effect (matches your UI style) */
+.chart-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Chart titles */
+.chart-box h3 {
+    margin-bottom: 1rem;
+    color: var(--text-muted);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Canvas responsiveness */
+.chart-box canvas {
+    max-width: 100%;
+    height: auto;
+}

@@ -3,5 +3,6 @@
     "python.analysis.extraPaths": [
         "${workspaceFolder}/cra_env/Lib/site-packages"
     ],
-    "python.terminal.activateEnvironment": true
+    "python.terminal.activateEnvironment": true,
+    "liveServer.settings.port": 5501
 }
