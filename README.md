@@ -90,6 +90,12 @@ uvicorn backend.app:app --host 127.0.0.1 --port 8000
 ```
 Open your browser and navigate to **[http://127.0.0.1:8000](http://127.0.0.1:8000)** to use the interactive Credit Risk Analyzer!
 
+### 5. Running the Jupyter Notebook Analysis
+If you wish to explore the original exploratory data analysis and model comparison:
+1. Ensure your virtual environment is activated and dependencies are installed.
+2. Open `notebooks/notebook.ipynb` in Jupyter Notebook or VS Code.
+3. Run all cells to view the statistical comparisons, EDA visualizations, and validation results.
+
 ### Risk Factors
 - **Income Level**: Strong inverse correlation with default risk
 - **Home Ownership**: Significant differences in default rates across ownership types
