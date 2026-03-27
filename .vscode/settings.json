@@ -1,0 +1,7 @@
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}/cra_env/Scripts/python.exe",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/cra_env/Lib/site-packages"
+    ],
+    "python.terminal.activateEnvironment": true
+}
