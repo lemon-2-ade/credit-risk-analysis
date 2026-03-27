@@ -55,29 +55,40 @@ Implemented and compared 9 classification algorithms:
 
 ## 🚀 Getting Started
 
-### Prerequisites
-```bash
-pip install -r requirements.txt
-```
-
-### Running the Analysis
-1. Clone this repository
-2. Install dependencies
-3. Open `notebooks/notebook.ipynb` in Jupyter
-4. Run all cells for complete analysis
-
-### Environment Setup
+### 1. Environment Setup
+Create a dedicated virtual environment for this project to avoid dependency conflicts:
 ```bash
 # Create virtual environment
-python -m venv .venv
+python -m venv cra_env
 
 # Activate environment
-# Windows:
-.venv\Scripts\activate
-
-# Install packages
-pip install -r requirements.txt
+# Windows (PowerShell):
+.\cra_env\Scripts\Activate.ps1
+# Windows (Command Prompt):
+cra_env\Scripts\activate.bat
+# Mac/Linux:
+source cra_env/bin/activate
 ```
+
+### 2. Install Dependencies
+Once the environment is active, install the required packages:
+```bash
+pip install -r backend/requirements.txt
+```
+
+### 3. Train the Machine Learning Model
+Generate the inference pipeline and retrain the LightGBM model:
+```bash
+python backend/train_model.py
+```
+*(This will save the model to `backend/model_pipeline.joblib`)*
+
+### 4. Start the Web Application
+Run the backend server to launch the frontend UI and the prediction API:
+```bash
+uvicorn backend.app:app --host 127.0.0.1 --port 8000
+```
+Open your browser and navigate to **[http://127.0.0.1:8000](http://127.0.0.1:8000)** to use the interactive Credit Risk Analyzer!
 
 ### Risk Factors
 - **Income Level**: Strong inverse correlation with default risk
