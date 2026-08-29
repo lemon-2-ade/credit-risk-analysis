@@ -6,7 +6,7 @@ A comprehensive machine learning project for credit risk assessment using advanc
 
 Develop and evaluate machine learning models to predict loan default risk, enabling financial institutions to make data-driven lending decisions and minimize credit losses.
 
-## 📊 Dataset Overview
+##  Dataset Overview
 
 - **Source**: Credit risk dataset with borrower and loan characteristics
 - **Target Variable**: `loan_status` (0: No Default, 1: Default)
@@ -17,7 +17,7 @@ Develop and evaluate machine learning models to predict loan default risk, enabl
 - **Loan**: Amount, interest rate, grade, intent
 - **Engineered**: Age groups, income brackets, loan-to-income ratios
 
-## 🔍 Methodology
+##  Methodology
 
 ### 1. Exploratory Data Analysis (EDA)
 - Distribution analysis of target and feature variables
@@ -53,7 +53,7 @@ Implemented and compared 9 classification algorithms:
 - **Metrics**: Accuracy, Precision, Recall, F1-score with business context
 - **Business Focus**: Prioritized Recall (detecting defaults) over Precision
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Environment Setup
 Create a dedicated virtual environment for this project to avoid dependency conflicts:
